@@ -1,0 +1,7 @@
+# ignore the following files:
+auswertung.fdb_latexmk
+auswertung.fls
+auswertung.aux
+auswertung.toc
+auswertung.log
+.DS_Store
