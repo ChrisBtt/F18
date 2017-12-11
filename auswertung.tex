@@ -4,9 +4,10 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8x]{inputenc}
 \usepackage{amssymb, amsmath, amsfonts}
-% \usepackage{ngerman}
+\usepackage{ngerman}
 
 \usepackage{float, graphicx}
+\usepackage{multicol}
 
 % Seitenlayout der Ränder
 \textwidth=170mm
@@ -53,12 +54,56 @@ Als besondere Auswertung testiert: Datum, Unterschrift:
 \newpage
 
 
-\section{introduction}
+\section{Einleitung}
+  \begin{multicols}{2}
+    test ob das ganze funktioniert
+    ansonsten hab ich jetz tmal geguckt ob das mit minipage geht
+  \end{multicols}
 
-\section{theory}
+\section{theoretischer Hintergrund}
 
+\section{Aufbau}
 
+\section{Durchführung}
+  \subsection{Messinstrumente kalibrieren}
+      For the exact measurement needs
+    \subsubsection*{Offset}
 
+    \subsubsection*{dark current}
+      \begin{tabular}{c|c}
+        exposure time [s] & dark current \\ \hline
+        $60$ & 168,27 \\
+        50 & 139,09 \\
+        40 & 111,91 \\
+        30 & 83,30 \\
+        20 & 55,62 \\
+        10 & 27,95
+      \end{tabular}
+      \begin{figure}[h]
+      	\centering
+      	\includegraphics[width=70mm]{datei-name}
+      	\caption{Übersicht über den Versuchsaufbau \label{fig:Versuchsaufbau}}
+      \end{figure}
+    \subsubsection*{noise}
+      \begin{multicols}{2}
+        The total noice is the sum of the instrument noice and noice given by
+        statistical fluctuations. At first the instrument noice can be measured
+        for different exposures.
+        \begin{tabular} {c|c}
+          exposures & noice $\sigma_I$ \\ \hline
+          $10 000$ & $262.75$\\
+          $8 000$ & $255,66$\\
+          $6 000$ & $211,11$\\
+          $4 000$ & $169,94$\\
+          $2 000$ & $121,01$
+        \end{tabular}
+        Due to this measurement the total noice can be measured.
+
+      \end{multicols}
+
+\section{Auswertung}
+
+\section{Diskussion}
 
 
 \end{document}
