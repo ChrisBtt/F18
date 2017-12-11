@@ -56,8 +56,11 @@ Als besondere Auswertung testiert: Datum, Unterschrift:
 
 \section{Einleitung}
   \begin{multicols}{2}
-    test ob das ganze funktioniert
-    ansonsten hab ich jetz tmal geguckt ob das mit minipage geht
+    During this experiment, we get to know the compositon of the atmosphere and
+    its impacts to the earth.
+    We take a closer look to the ozone production and the chemical influence by
+    different catalysators such as nitric oxide. To understand the influence of natural and
+    anthropogen events.
   \end{multicols}
 
 \section{theoretischer Hintergrund}
@@ -72,18 +75,18 @@ Als besondere Auswertung testiert: Datum, Unterschrift:
     \subsubsection*{dark current}
       \begin{tabular}{c|c}
         exposure time [s] & dark current \\ \hline
-        $60$ & 168,27 \\
+        60 & 168,27 \\
         50 & 139,09 \\
         40 & 111,91 \\
         30 & 83,30 \\
         20 & 55,62 \\
         10 & 27,95
       \end{tabular}
-      \begin{figure}[h]
-      	\centering
-      	\includegraphics[width=70mm]{datei-name}
-      	\caption{Übersicht über den Versuchsaufbau \label{fig:Versuchsaufbau}}
-      \end{figure}
+      % \begin{figure}[h]
+      % 	\centering
+      % 	\includegraphics[width=70mm]{datei-name}
+      % 	\caption{Übersicht über den Versuchsaufbau \label{fig:Versuchsaufbau}}
+      % \end{figure}
     \subsubsection*{noise}
       \begin{multicols}{2}
         The total noice is the sum of the instrument noice and noice given by
@@ -97,7 +100,13 @@ Als besondere Auswertung testiert: Datum, Unterschrift:
           $4 000$ & $169,94$\\
           $2 000$ & $121,01$
         \end{tabular}
-        Due to this measurement the total noice can be measured.
+        Due to this values the total noice can be measured.
+        To get a total satisfaction of the spectrograph of about 60\%, the following
+        formula is used:
+        \begin{equation}
+          T(P) = \frac{C(P)}{N \cdot C_{max}} \cdot 100
+        \end{equation}
+        Therefore we choose values $C(P)=1,4 \cdot 10^6 \, and \, N=500$.
 
       \end{multicols}
 
